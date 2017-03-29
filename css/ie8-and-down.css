@@ -1,0 +1,17 @@
+.unsupported-cover{
+  position: absolute;
+  top: -3%;
+  background-color: black;
+  height: 110%;
+  width: 100%;
+  color: silver;
+  font-size: 2em;
+  font-family: monospace;
+  z-index: 2;
+  text-align: center;
+  padding: 18% 10% 15% 32%;
+  background-image: url(../img/sad-face.png);
+  background-repeat: no-repeat;
+  background-position: 14% 50%;
+  display: block;
+}

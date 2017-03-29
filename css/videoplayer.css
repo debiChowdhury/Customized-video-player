@@ -1,0 +1,344 @@
+body{
+  margin:0;
+  border:0;
+}
+
+header{
+  font-size: 42px;
+  text-align: center;
+  background-color: #1E1B1B;
+  color: #ded7d6;
+  height: 2em;
+  padding-top: 10px;
+  /* position: fixed; */
+  width: 100%;
+  font-family: 'Satisfy', cursive;
+  font-family: 'Cookie', cursive;
+  margin-bottom: 29px;
+}
+
+.video-wrapper{
+  height: 30em;
+  width: 60%;
+  position: absolute;
+  left: 50%;
+  margin-left: -30%;
+}
+
+#firstVideo{
+
+
+  position: relative;
+  /* left: 18%; */
+  /*background:url("../video/coverGif.gif") ;*/
+  background-color: black;
+}
+.control-bar{
+  background-color: #b2211b;
+  height: 8%;
+  width: 100%;
+  position: relative;
+  bottom: 1.5%;
+  /* left: 18%; */
+  cursor: pointer;
+}
+
+.play{
+  font-size: 25px;
+  padding: 3px;
+  margin-left: 8px;
+}
+
+.backward{
+  font-size: 21px;
+  /*margin-left: 2%;*/
+}
+.stop{
+  font-size: 21px;
+  margin-left: 1%;
+}
+.forward{
+  font-size: 21px;
+  margin-left: 1%;
+}
+.volume{
+  position: relative;
+  /* left: 18%; */
+  font-size: 22px;
+  padding-top: 0;
+  display: inline-block;
+}
+/*input[type=range] {
+    display: block;
+    width: 100%;
+    margin: 3px;
+}*/
+
+input[type=range] {
+  -webkit-appearance: none;
+  width: 100%;
+  border-radius:50px;
+  background-color: transparent;
+
+}
+input[type=range]:focus {
+  outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 5.4px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  background: #3071a9;
+  border-radius: 1.3px;
+  border: 0.2px solid #010101;
+}
+input[type=range]::-webkit-slider-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 1px solid #000000;
+  height: 20px;
+  width: 10px;
+  border-radius: 50px;
+  background: #ffffff;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -10px;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #367ebd;
+}
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 5.4px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  background: #3071a9;
+  border-radius: 1.3px;
+  border: 0.2px solid #010101;
+}
+input[type=range]::-moz-range-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 1px solid #000000;
+  height: 20px;
+  width: 10px;
+  border-radius: 50px;
+  background: #ffffff;
+  cursor: pointer;
+}
+input[type=range]::-ms-track {
+  width: 100%;
+  height: 5.4px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: transparent;
+  border-color: transparent;
+  border-width: 16px 0;
+  color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+  background: #2a6495;
+  border: 0.2px solid #010101;
+  border-radius: 2.6px;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+input[type=range]::-ms-fill-upper {
+  background: #3071a9;
+  border: 0.2px solid #010101;
+  border-radius: 2.6px;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+input[type=range]::-ms-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 1px solid #000000;
+  height: 20px;
+  width: 10px;
+  border-radius: 3px;
+  background: #ffffff;
+  cursor: pointer;
+  margin-top: -10px;
+}
+input[type=range]:focus::-ms-fill-lower {
+  background: #3071a9;
+}
+input[type=range]:focus::-ms-fill-upper {
+  background: #367ebd;
+}
+
+.seekbar{
+  display: inline-block;
+  width: 45%;
+  padding-left: 1em;
+  position: relative;
+  bottom: 0.5em;
+}
+
+.footer-bar{
+	height: 68px;
+  width: 100%;
+  background-color: black;
+  position: absolute;
+  bottom: 0%;
+}
+.prev{
+	padding: 2px;
+  width: 8%;
+  margin-left: 3%;
+  margin-top: 7px;
+  font-size: 37px;
+  /* padding-top: 1%; */
+  border-radius: 13px;
+  background-color: #b2211b;
+  color: #ded7d6;
+  border: 0;
+	font-family: 'Cookie', cursive;
+	outline:0;
+}
+.next{
+	padding: 2px;
+  width: 8%;
+  margin-right: 3%;
+  margin-top: 7px;
+  font-size: 37px;
+  /* padding-top: 1%; */
+  border-radius: 13px;
+  background-color: #b2211b;
+  color: #ded7d6;
+  border: 0;
+	font-family: 'Cookie', cursive;
+	outline:0;
+	float:right;
+}
+
+#timeWrapper{
+  display: inline-block;
+  /*padding-bottom: -1em;*/
+  /* padding: 1%; */
+  position: relative;
+  bottom: 15%;
+  left: 1%;
+}
+#volRocker{
+  width: 60%;
+  position: absolute;
+  display: inline-block;
+  padding-left: 5%;
+  top: 35%;
+  transition: opacity 0.5s;
+}
+.volume-wrapper{
+  display: inline-block;
+  width: 14%;
+  float: right;
+  position: relative;
+  /*top: 16%;*/
+  overflow: hidden;
+  top: 6px;
+  right: 1em;
+}
+.fullscreen{
+  font-size: 20px;
+  position: relative;
+  float: right;
+  right: 1%;
+  top: 15%;
+}
+
+.unsupported-cover{
+  display: none;
+}
+
+
+.go-full-screen-video-wrapper{
+  top: 0;
+  margin: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+    background-color: black;
+  z-index: 1;
+}
+
+.go-full-screen-video{
+  /*height: 90%;*/
+  top: 0em;
+}
+
+.go-full-screen-cotrols{
+  position: absolute;
+    bottom: 0em;
+    opacity: 0;
+    transition: opacity 1s;
+    padding-top: 1%;
+    background-color: rgba(4, 4, 4, 0.49);
+    color: silver;
+
+}
+
+/*#firstVideo:hover .go-full-screen-cotrols{
+  opacity: 1;
+}*/
+.loading-cover{
+position: absolute;
+top: 50%;
+left: 50%;
+transform:translate(-50%,-50%);
+}
+
+.player-name{
+    display: inline-block;
+    color: whitesmoke;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 1%;
+    font-size: 28px;
+    font-family: cursive;
+  }
+
+ /*-------------------------------------------MOZILLA SPECIFIC STYLES--------------------------------------*/
+@-moz-document url-prefix() {
+  .seekbar {
+     bottom:0;
+  }
+  #volRocker{
+     top: 0;
+     bottom: 0.5em;
+  }
+}
+
+/*-------------------------------------------------IE 10+ STYLES --------------------------------------------*/
+
+@supports (-ms-ime-align:auto) {
+  #play,#rewind,#stopPlay,#fastFwd,#timeWrapper{
+      top:-50%;
+  }
+  .seekbar{
+      top: 0;
+  }
+  .volume-wrapper{
+      top: 27%;
+  }
+  #volRocker{
+      top: -35%;
+  }
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  #play,#rewind,#stopPlay,#fastFwd,#timeWrapper{
+      top:-50%;
+  }
+  .seekbar{
+      top: -20%;
+  }
+  .volume-wrapper{
+      top: 27%;
+  }
+  #volRocker{
+      top: -65%;
+  }
+  .control-bar{
+    height:11%;
+  }
+}

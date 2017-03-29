@@ -1,0 +1,249 @@
+@media all and (min-width:500px) and (min-height: 900px) and (orientation:portrait) {
+  body {
+    background-color: antiquewhite;
+    overflow-x: hidden;
+  }
+  .video-wrapper{
+    width: 98%;
+    left: 0;
+    margin-left: 0;
+    margin-top: 13%;
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+
+  .control-bar {
+
+    height: 12%;
+  }
+  .fullscreen{
+    display: none;
+  }
+  #volRocker {
+
+      display: none;
+
+  }
+  .volume-wrapper{
+    width:4%;
+  }
+  .loading-cover{
+    display: none;
+  }
+}
+@media all and (min-width: 600px) and (max-width:1300px) and (min-height: 500px) and (max-height: 800px) and (orientation:landscape) {
+body {
+  background-color:black; /* for landscape*/
+     }
+     header{
+       height:9%;
+    margin-bottom: 0;
+     }
+ .footer-bar{
+   height: 9%;
+ }
+ .fullscreen{
+   display: none;
+ }
+  .video-wrapper
+   {
+    height: 82%;
+    width: 100%;
+    position: absolute;
+    left:0;
+    margin-left: 0;
+
+}
+#firstVideo{
+  width: 100%;
+    height: 91%;
+}
+.control-bar {
+    background-color: #b2211b;
+    height: 7%;
+        bottom: 2%;
+}
+#volRocker {
+
+    display: none;
+
+}
+.volume-wrapper{
+  width:4%;
+}
+.loading-cover{
+  display: none;
+}
+}
+
+
+/*--------------------------- IPAD MEDIA QUERIES ----------------------------*/
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait) {
+  body {
+    background-color: antiquewhite;
+    overflow-x: hidden;
+  }
+  .video-wrapper{
+    width: 98%;
+    left: 0;
+    margin-left: 0;
+    margin-top: 13%;
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+
+  .control-bar {
+
+    height: 12%;
+  }
+  .fullscreen{
+    display: none;
+  }
+  #volRocker {
+
+      display: none;
+
+  }
+  .volume-wrapper{
+    width:4%;
+  }
+  .loading-cover{
+    display: none;
+  }
+}
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:landscape) {
+body {
+  background-color:black; /* for landscape*/
+     }
+
+     header{
+       height:9%;
+    margin-bottom: 0;
+     }
+ .footer-bar{
+   height: 9%;
+ }
+  .video-wrapper
+   {
+    height: 82%;
+    width: 100%;
+    position: absolute;
+    left:0;
+    margin-left: 0;
+
+}
+#firstVideo{
+  width: 100%;
+    height: 93%;
+}
+.control-bar {
+    background-color: #b2211b;
+    height: 7%;
+        bottom: 2%;
+}
+.fullscreen{
+  display: none;
+}
+#volRocker {
+
+    display: none;
+
+}
+.volume-wrapper{
+  width:4%;
+}
+.loading-cover{
+  display: none;
+}
+}
+/*--------------------------- IPhone MEDIA QUERIES ----------------------------*/
+@media all  and (min-device-width : 414px) and (max-device-width : 736px) and (orientation:landscape) {
+  .play,.backward,.forward,.stop,.volume {
+
+
+}
+.fullscreen,#volRocker{
+  display: none;
+
+}
+.volume-wrapper {
+
+    width: 8%;
+
+}
+.volume{
+  left:2%;
+}
+.loading-cover{
+  display: none;
+}
+header{
+  height:9%;
+margin-bottom: 0;
+}
+.footer-bar{
+height: 9%;
+}
+.video-wrapper {
+    height: 80%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    margin-left: 0;
+}
+#firstVideo{
+width: 100%;
+height: 93%;
+}
+.control-bar {
+    background-color: #b2211b;
+    height: 10%;
+    bottom: 6%;
+}
+.footer-bar{
+  display: none;
+}
+}
+@media all  and (min-device-height : 736px) and (max-device-width : 414px) and (orientation:portrait){
+
+  .video-wrapper {
+      height: 30em;
+      width: 90%;
+      position: absolute;
+      left: 50%;
+      margin-left: -44%;
+  }
+  .play,.backward,.forward,.stop,.volume {
+
+
+}
+.fullscreen,#volRocker{
+  display: none;
+
+}
+.loading-cover{
+  display: none;
+}
+input[type=range] {
+    -webkit-appearance: none;
+    width: 63%;
+
+}
+#timeWrapper {
+    display: inline-block;
+    /* padding: 1%; */
+    position: relative;
+    bottom: 15%;
+    left: -15%;
+}
+.volume-wrapper {
+    display: inline-block;
+    width: 9%;
+    /* float: right; */
+    position: relative;
+    top: 16%;
+    overflow: hidden;
+    top: -27px;
+    right: 1em;
+}
+}

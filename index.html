@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Video Player</title>
+      <meta charset="utf-8">
+      <link rel="shortcut icon" href="img/significon-YouTube.png" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="https://fonts.googleapis.com/css?family=Cookie|Satisfy" rel="stylesheet">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" type="text/css" href="css/videoplayer.css"/>
+	    <link rel="stylesheet" type="text/css" href="css/videoplayerresponsive.css"/>
+
+      <!--[if lte IE 8]>
+  	     <link rel="stylesheet" type="text/css" href="css/ie8-and-down.css" />
+      <![endif]-->
+  </head>
+  <body>
+      <header>
+      </header>
+      <div class="player-name">
+          <img src="img/significon-YouTube.png" height="50" width="50">
+          PlayMe&nbsp;►
+      </div>
+
+      <div class='video-wrapper'>
+
+          <video id="firstVideo" width="100%" height="100%" preload="metadata">
+            <!-- <source src="video/oceans.mp4" type="video/mp4"> -->
+          </video>
+
+          <div class="control-bar">
+              <span id="play" class="glyphicon glyphicon-play play"></span>
+              <span id="rewind" onclick="skipPlay(-10)" class="glyphicon glyphicon-step-backward backward"></span>
+              <span id="stopPlay" onclick="stopPlay()"class="glyphicon glyphicon-repeat stop"></span>
+              <span id="fastFwd" onclick="skipPlay(10)" class="glyphicon glyphicon-step-forward forward"></span>
+              <span class="seekbar">
+                <input type="range" min="0" max="100" value="0" id="timeBar" data-toggle="tooltip" data-placement="top" title="abs">
+              </span>
+              <span id="timeWrapper">
+                <span id="currentTime">0:00</span> /
+                <span id="duration"></span>
+              </span>
+              <span class="glyphicon glyphicon-fullscreen fullscreen"></span>
+              <div class="volume-wrapper">
+                <span class="glyphicon glyphicon-volume-up volume" id='muted'></span>
+                <input type="range"  min="0" max="100" value="100" id="volRocker">
+              </div>
+          </div>
+
+          <div class="unsupported-cover">Your browser does not support this video player!</div>
+          <div class="loading-cover" id="loader">
+              <img src="img/load1.gif" height="50" width="50">
+          </div>
+
+      </div>
+
+    	<div class="footer-bar">
+    	   <button class="prev" onclick='prev()'>Prev</button>
+    	   <button class="next" onclick='next()'>Next</button>
+    	</div>
+
+      <script src="js/video.js"></script>
+      <script src="js/ferchedvideo.js"></script>
+  </body>
+
+
+</html>
