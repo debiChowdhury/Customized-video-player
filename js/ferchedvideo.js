@@ -6,8 +6,7 @@ function PageRender(idx){
         $("video").attr("src",videoJson[num].src);
         $("video").attr("poster",videoJson[num].cover);
         $('header').text(videoJson[num].title);
-        console.log(videoJson[num].src);
-        console.log(videoJson[num].cover);
+
         initializePlayer();
       // timeBar.value=0;
       // currentTime.innerHTML="0:00";
@@ -59,8 +58,7 @@ var getData = function(dataUrl) {
     type:"GET",
     success:function(data,satus,xhr){
       return data;
-
-     }
+    }
   });
 };
 

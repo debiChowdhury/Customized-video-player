@@ -15,8 +15,6 @@ var video,
 
 var videoLink = 'video/oceans.mp4';
 var videoPoster = 'img/oceanimage.png';
-document.addEventListener("DOMContentLoaded", initializePlayer());
-
 function initializePlayer(){
 
     video = document.getElementById("firstVideo");
@@ -59,6 +57,8 @@ function initializePlayer(){
         });
 
 }
+
+document.addEventListener("DOMContentLoaded", initializePlayer);
 
 // Play and pause function
     function vidPlay() {
@@ -142,7 +142,7 @@ function initializePlayer(){
 
 
     function setVol(){
-      console.log('chng');
+
       var setValue = this.value/100;
       video.volume= setValue;
 
@@ -164,14 +164,12 @@ function initializePlayer(){
       var el = document.body;
 
       // Supports most browsers and their versions.
-      var requestMethod = el.requestFullScreen || el.webkitRequestFullScreen
-      || el.mozRequestFullScreen || el.msRequestFullScreen;
+      var requestMethod = (el.requestFullScreen || el.webkitRequestFullScreen
+      || el.mozRequestFullScreen || el.msRequestFullScreen);
 
       if (requestMethod) {
-
         // Native full screen.
         requestMethod.call(el);
-
       }
 
       document.getElementsByClassName('video-wrapper')[0].classList.add('go-full-screen-video-wrapper');
